@@ -21,19 +21,40 @@ namespace Inheritance
             // Set this class to inherit from your Animal Class
 
 
-
-
             /*Create an object of your Bird class
              *  give values to your members using the object of your Bird class
-             *  
              * Creatively display the class member values 
              */
+
+            var bird = new Bird();
+
+            bird.LaysEggs = true;
+            bird.HasBeak = true;
+            bird.CanFly = true;
+            bird.HasFeathers = true;
+            bird.Is4Legged = false;
+            bird.HasFur = false;
+
+            bird.BirdStats();
+            Console.WriteLine("");
 
             /*Create an object of your Reptile class
              *  give values to your members using the object of your Reptile class
              *  
              * Creatively display the class member values 
              */
+
+            var reptile = new Reptile();
+            reptile.ExternalEggs = true;
+            reptile.IsColdBlooded = true;
+            reptile.HasScales = true;
+            reptile.HasBackBone = true;
+            reptile.Is4Legged = true;
+            reptile.HasFur = false;
+            reptile.DrinksWater = true;
+
+            reptile.AnimalStats();
+            
         }
     }
 }
